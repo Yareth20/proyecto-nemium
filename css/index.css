@@ -8,6 +8,9 @@
  
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--grey1);
@@ -18,12 +21,66 @@ body {
 }
 
 .hero{
-  background-image: linear-gradient(274.51deg, rgba(74,0,224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('/images/patron-2.png');
+  background-image: linear-gradient(274.51deg, rgba(74,0,224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('../images/patron-2.png');
   block-size: 350px;
 }
 
+.header{
+  /* position: sticky;
+  inset-block-start: -45px; */
+  position: sticky;
+  inset-block-start: -45px;
+  /* left: 0;  */
+
+  /* border: 1px solid red; */
+}
+.header-content{
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 50px;
+  inset-inline-end: 200px;
+  inline-size: 208px;
+
+  /* z-index: ; */
+  /* top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0px; */
+  /* border: 1px solid red; */
+  /* padding-inline: 20px;
+  position: relative;
+  inset-block-start: 70px; */
+}
+
 header{
-  /* text-align: justify; */
+  font-size: 14px;
+  margin-block-start: 64px;
+
+}
+
+nav details summary{
+  color: var(--black);
+  font-weight: 700;
+  /* border: 1px solid red; */
+}
+
+header li{
+  color: var(--black);
+  margin-block-start: 16px;
+
+}
+
+
+header a{
+  color: var(--black);
+  text-decoration: none;
+}
+
+header a:hover{
+  color: var(--white);
+  background: #5551FF;
+
 }
 
 h1{
@@ -60,8 +117,15 @@ p{
 }
 
 pre{
+  color: var(--black);
+  font-family: 'Rubik';
+  line-height: 24px;
   text-align: justify;
-  border: ;
+  padding: 40px;
+  border: 8px solid #5551FF;
+  border-radius: 8px;
+  box-shadow: -10px 10px 0px #ABAAF6;
+  margin-block-end: 40px;
 }
 
 blockquote{
@@ -130,6 +194,8 @@ blockquote{
   margin-block-end: 16px;
   margin-block-start: 16px;
 }
+
+
 
 #list li::marker{
   color: #5551FF;
