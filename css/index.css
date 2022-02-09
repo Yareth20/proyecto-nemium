@@ -146,6 +146,7 @@ blockquote{
   padding-inline-start: 16px;
   border-inline-start: 4px solid var(--purple);
   max-inline-size: 100%;
+  box-sizing: border-box;
   /* text-align: justify; */
   
   
